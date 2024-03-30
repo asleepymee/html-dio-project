@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Meu Site</title>
+    </head>
+    <body>
+        <h1>Projeto HTML para o curso da DIO</h1>
+        <hr id="horizontal-line"/>
+        <h3>Explicando o desafio:</h3>
+        <p>
+            O desafio consiste em explicar e utilizar as tags aprendidas durante o curso.
+        </p>
+        <hr>
+        <h1 id="indice">Índice</h1>
+            <ul>
+                <li><a href="#titulos">Tags de título</a></li>
+                <li><a href="#personalizacao">Parágrafos e personalização de texto</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#outras">Outras tags</a></li>
+                <li><a href="#referencia">Referências</a></li>
+            </ul>
+        <hr>
+        <h3 id="titulos">Tags de Título<a href="#indice"><small>(voltar para o indice)</small></a></h3>
+        <p>
+            As tags de títulos(headings) são utilizadas para definir os títulos(obviamente) e os subtítulos dos textos.
+            São divididas em 6(seis) níveis, indo de <strong>h1</strong>(a maior) até <strong>h6</strong>(a menor).
+        </p>
+        <h4>São elas:</h4>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+        <hr>
+        <h3 id="personalizacao">Parágrafos e personalização de texto<a href="#indice"><small>(voltar para o indice)</small></a></h3>
+        <p>
+            Os parágrafos, como este em que estou escrevendo, são denominados pela tag &ltp&gt...&lt/p&gt
+        </p>
+        <p>As tags de personalização de texto são utilizadas para destacar partes dos textos para que as partes necessárias sejam enfatizadas</p>
+        <h4>Algumas tags de personalização são:</h4>
+        <ul>
+            <li><mark>&ltmark&gt...&lt/mark&gt</mark>, utilizada para simular um marca texto no site</li>
+            <li><strong>&ltstrong&gt...&lt/strong&gt</strong>, utilizada para deixar o texto em negrito</li>
+            <li><i>&lti&gt...&lt/i&gt</i>, utilizada para deixar o texto em italico</li>
+            <li><u>&ltu&gt...&lt/u&gt</u>, utilizada para deixar o texto sublinhado</li>
+            <li><del>&ltdel&gt...&lt/del&gt</del>, utilizada para "riscar" o texto, simulando uma alteração</li>
+            <li><small>&ltsmall&gt...&lt/small&gt</small>, utilizada para deixar o texto menor</li>
+            <li>Exemplo<sub>&ltsub&gt...&lt/sub&gt</sub>, utilizada para criar um texto menor na parte inferior</li>
+            <li>Exemplo<sup>&ltsup&gt...&lt/sup&gt</sup>, utilizada para criar um texto menor na parte superior</li>
+            <li><blockquote>&ltblockquote&gt...&lt/blockquote&gt</blockquote> utilizada para adicionar citações de outras fontes</li>
+            <li>&lthr&gt...&lt/hr&gt, utilizada para adicionar uma linha horizontal, como essa aqui de baixo</li>
+        </ul>
+        <hr>
+        <h3 id="listas">Listas<a href="#indice"><small>(voltar para o indice)</small></a></h3>
+        <p>Estas tags são utilizadas para criar listas ordenadas(numeradas) e não ordenadas, as chamadas "bullet lists"</p>
+        <p>As tags são:</p>
+        <ul>
+            <li><strong>&ltol&gt...&lt/ol&gt</strong>, para listas ordenadas:
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ol>
+            </li>
+            <li><strong>&ltul&gt...&lt/ul&gt</strong>, para listas não ordenadas:
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ul>
+            </li>
+        </ul>
+        <p>A estrutura de uma lista também deve conter a tag <strong>&ltli&gt...&ltli&gt</strong> que estipula os itens das listas</p>
+        <p>No fim, a estrutura deve ficar assim:</p>
+        <ul>
+            <li>
+                <strong>Para listas ordenadas</strong>
+                <br/>&ltul&gt<br/>
+                &nbsp &nbsp &ltli&gt...&lt/li&gt<br/>
+                &nbsp &nbsp &ltli&gt...&lt/li&gt<br/>
+                &lt/ul&gt
+            </li>
+            <li>
+                <strong>Para listas não ordenadas</strong>
+                <br/>&ltol&gt<br/>
+                &nbsp &nbsp &ltli&gt...&lt/li&gt<br/>
+                &nbsp &nbsp &ltli&gt...&lt/li&gt<br/>
+                &lt/ol&gt
+            </li>
+        </ul>
+        <hr>
+        <h3 id="outras">Outras tags<a href="#indice"><small>(voltar para o indice)</small></a></h3>
+        <p>Aqui eu trago outras tags citadas que não se encaixam exatamente nos tópicos anteriores</p>
+        <ul>
+            <li>a tag <strong>&lta&gt...&lt/a&gt</strong>
+                <br>
+                <p>É utilizada para incluir links externos ou links numa mesma página, como o <a href="#indice">índice</a>, que permite clicar em um link que te leva<br>
+                para uma parte da mesma página, ou os links citados nas referências.
+                </p>
+            </li>
+            <li>a tag <strong>&ltabbr title="..."&gt...&lt/abbr&gt</strong>
+                <br>
+                <p>É utilizada para incluir a descrição de uma abreviação, como por exemplo: <abbr title="Create, Read, Update, Delete">CRUD</abbr>(passe o cursor por cima)<br/>
+                    Onde o <strong>title="..."</strong> recebe a descrição da abreviação.
+                </p>
+            </li>
+            <li>Na descrição do desafio foi citada a tag <strong>&ltfont&gt...&lt/font&gt</strong> que era utilizada para<br/>
+                formatar um texto alterando a cor, fonte e tamanho, mas não é mais utilizada, hoje em dia se utiliza o CSS para formatar os textos<br/>
+                Para formatar a cor, fonte e tamanho de um parágrafo com CSS a sintaxe seria a seguinte:<br/>
+                <ul>
+                    <li><strong>Para alterar a cor</strong><br/>
+                        <i>&ltp style="color:blue"&gtEste texto é azul&lt/p&gt</i><br/>
+                        ficaria assim:
+                        <p style="color:blue">Este texto é azul</p>
+                    </li>
+                    <li><strong>Para alterar a fonte</strong><br/>
+                        <i>&ltp style="font-family:verdana"&gtEste texto está com a fonte verdana&lt/p&gt</i><br/>
+                        ficaria assim:
+                        <p style="font-family: verdana;">Este texto está com a fonte verdana</p>
+                    </li>
+                    <li><strong>Para alterar o tamanho</strong><br/>
+                        <i>&ltp style="font-size:25px"&gtEste texto está com um tamanho de 25 pixels&lt/p&gt</i><br/>
+                        ficaria assim:
+                        <p style="font-size: 25px;">Este texto está com um tamanho de 25 pixels</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3 id="referencia">Referências<a href="#indice"><small>(voltar para o indice)</small></a></h3>
+        <ol>
+            <li><a href="https://www.w3schools.com/tags/tag_hn.asp" target="_blank">Cabeçalhos H1 até H6</a></li>
+            <li><a href="https://www.w3schools.com/tags/tag_font.asp" target="_blank">tag &ltfont&gt...&lt/font&gt e sua substituição</a></li>
+            <li><a href="https://www.w3schools.com/tags/tag_abbr.asp" target="_blank">tag &ltabbr&gt...&lt/abbr&gt</a></li>
+            <li><a href="https://stackoverflow.com/questions/34692479/any-alternative-of-xmp-tag-to-renders-html-to-as-plain-text" target="_blank">Como fiz para escrever os códigos com símbolos e tudo mais</a></li>
+        </ol>
+    </body>
+</html>
